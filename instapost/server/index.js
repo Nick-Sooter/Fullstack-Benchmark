@@ -11,8 +11,29 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/../client/dist'));
 
 
-app.get('/api/posts', function(req, res) {
-  // TODO - your code here!
+app.get('/api/posts', function (req, res) {
+  // access collection of posts
+  Post.find({}).exec(function (err, allData) {
+    if (err) {
+      console.log(err);
+      return res.status(500).json({ error: 'Internal Server Error' });
+    }
+    return res.status(200).json({
+      posts: allData
+    });
+  });
+
+});
+
+app.post('api/posts', function (req, res) {
+  Posts.create(req.body, function (err, newPost) {
+    if (err) {
+      console.log(err);
+    }
+    return res.status(200).json({
+      post: newPost
+    });
+  });
 });
 
 app.listen(PORT, () => {

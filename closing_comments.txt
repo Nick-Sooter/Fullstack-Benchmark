@@ -1,11 +1,19 @@
 Please take the time to reflect on how you feel you did on the following concepts.
 
+I feel pretty awful about this benchmark. I got about as far as I did on the Technical Assessment, but in some ways I think I may have regressed a bit this week. While working on the complex requirements of the Questions and Answers widget for the FEC project, I've searched all over the internet for different ways to try to make my widget work and keep up with my teammates, but I think that was a bad strategy. Taking a hundred ideas from a hundred different sources and trying to integrate them without full understanding is counterproductive. I think it only served to confuse me more than I was.
+
 Q: How do you feel about your understanding of the client server relationship? What blind spots do you feel you have about the connection between these two?
-A:
+A: I found myself stuck again in the first section with React (where I struggled during the TA). I get so bogged down with where things are supposed to go. I was able to pass the posts from the api into the browser, but I struggled with rendering the api data onto the page.
+
+I don't have a good understanding of how to refactor the Feed component and then leverage the Post component with the requested data. I refactored Feed to be a class component since it was acquiring data from the server, but I don't know if that was correct.
+
+In my state, am I supposed to have multiple key value pairs, or just an array for all the posts? In my componentDidMount, when I setState, am I supposed to use key value pairs for user, image, body, likes, etc?
+
+I tried to add a map function to pass props into the Post component, but I couldn't get it to work. I'm confused about the placement of the map function.
 
 Q: How do you feel on your ability to create route handlers server side? I.E. Get route for retrieveing documents, Post route for creating documents. What blind spots do you feel you have about this concept?
-A:
+A: I feel more comfortable with the route handlers than React. I went ahead and wrote the Create function in the server. I still don't have much practice with PUT, PATCH and DELETE, so I could use some practice with those.
 
 Q: How do you feel on your ability to query your database using proper model methods? I.E Todo.find() or Todo.create(). What blind spots do you feel you have about this concept?
-A:
+A: I feel comfortable with find, but less so with the others. It would be good to get some practice with these.
 
