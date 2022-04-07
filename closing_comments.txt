@@ -16,4 +16,5 @@ A: I feel more comfortable with the route handlers than React. I went ahead and 
 
 Q: How do you feel on your ability to query your database using proper model methods? I.E Todo.find() or Todo.create(). What blind spots do you feel you have about this concept?
 A: I feel comfortable with find, but less so with the others. It would be good to get some practice with these.
+//
 
